@@ -1,4 +1,4 @@
-# Clock without RTC module based on an Arduino
+# **Clock without RTC module based on an Arduino**
 
 This is my first Arduino based project through which I learned a bit about the micro-controller. I purchased an Arduino kit and it came with a few sensors and some instructions. Out of curiosity I decided to make a clock with the LCD display that came included and found out that a Real Time Clock (RTC) module would be the easiest way to make one. Since my kit lacked said module, I chose to make the clock without one and also include real time temperature and humidity data using the DHT11 sensor.
 
