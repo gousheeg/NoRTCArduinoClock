@@ -20,7 +20,7 @@ This is my first Arduino based project through which I learned a bit about the m
 '''
 #include <LiquidCrystal.h>
 #include <dht11.h>
-
+//initializing variables
 int sec=0,minute=0,hour=0, startstop=1;
 //buttons config
 int hourbutton=5;
@@ -28,7 +28,6 @@ int minbutton=6;
 int startbutton=2;
 int buttonState1=0;
 int buttonState2=0;
-
 
 //temperature and humidity sensor
 dht11 DHT;
@@ -63,11 +62,11 @@ byte drop[8] = {
 void setup()
 {
   lcd.createChar(1,drop); 
-    lcd.createChar(2,therm);
-    lcd.begin(16,2);
-    lcd.print("Welcome Gousheeg");
-    delay(2000);
-    lcd.clear();
+  lcd.createChar(2,therm);
+  lcd.begin(16,2);
+  lcd.print("Welcome Gousheeg");
+  delay(2000);
+  lcd.clear();
 
     pinMode(minbutton, INPUT_PULLUP);
     pinMode(hourbutton, INPUT_PULLUP);
@@ -96,7 +95,6 @@ void loop()
       lcd.print(temp);
       lcd.write(0xDF);   
       lcd.print("C");
-
 
     sec+=1;
 
@@ -139,7 +137,6 @@ void loop()
       if(minute==60){minute=0;}
     }
     
-
     lcd.setCursor(0,0);
     lcd.print("Set Time");
     lcd.setCursor(4,1); 
