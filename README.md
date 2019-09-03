@@ -85,11 +85,9 @@ void setup()
   lcd.print("Welcome Gousheeg");
   delay(2000);
   lcd.clear();
-
-    pinMode(minbutton, INPUT_PULLUP);
-    pinMode(hourbutton, INPUT_PULLUP);
-    pinMode(startbutton, INPUT_PULLUP);
-
+  pinMode(minbutton, INPUT_PULLUP);
+  pinMode(hourbutton, INPUT_PULLUP);
+  pinMode(startbutton, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(2),button1,FALLING);
 }
 
