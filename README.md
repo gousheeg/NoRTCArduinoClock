@@ -21,5 +21,6 @@ This is my first Arduino based project through which I learned a bit about the m
 # **References:**
 * https://www.arduino.cc/en/Tutorial/DigitalInputPullup
 * https://www.arduino.cc/en/Reference/LiquidCrystal
+* https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
 * https://maxpromer.github.io/LCD-Character-Creator/
 * https://easyeda.com/
